@@ -2,11 +2,11 @@
   <div id="app">
     <div v-if="!image">
       <h2>Select an image</h2>
-      <input type="file" @change="onFileChange">
+      <input type="file" accept="image/*" @change=" onFileChange ">
     </div>
     <div v-else>
-      <img :src="image" />
-      <button @click="removeImage">Remove image</button>
+      <img :src="image " />
+      <button @click="removeImage ">Remove image</button>
     </div>
   </div>
 </template>
